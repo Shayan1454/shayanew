@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>شایانیو – مرجع نمونه‌سوالات پایه هفتم</title>
+
+  <!-- فونت‌ها -->
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h1 class="logo">شایانیو</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#courses">درس‌ها</a></li>
+        <li><a href="#popular">پرطرفدار</a></li>
+        <li><a href="#about">درباره‌ما</a></li>
+        <li><a href="#contact">تماس</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h2>نمونه‌سوالات رایگان پایه هفتم</h2>
+    <p>دانلود PDF‌ نیمسال اول و دوم همهٔ دروس + جزوات تیزهوشان</p>
+    <a href="#courses" class="btn-primary">شروع کنید</a>
+  </div>
+</section>
+
+<section id="courses" class="courses-section">
+  <div class="container">
+    <h3 class="section-title">درس‌های پایه هفتم</h3>
+    <div class="course-grid">
+      <article class="course-card"><h4>ریاضی</h4><a class="btn-secondary" href="samples/riazi.html">مشاهده</a></article>
+      <article class="course-card"><h4>علوم</h4><a class="btn-secondary" href="samples/oloom.html">مشاهده</a></article>
+      <article class="course-card"><h4>قرآن</h4><a class="btn-secondary" href="samples/q.html">مشاهده</a></article>
+      <article class="course-card"><h4>مطالعات اجتماعی</h4><a class="btn-secondary" href="samples/ejtemai.html">مشاهده</a></article>
+      <article class="course-card"><h4>پیام‌های آسمان</h4><a class="btn-secondary" href="samples/payamha.html">مشاهده</a></article>
+      <article class="course-card"><h4>جزوات تیزهوشان</h4><a class="btn-secondary" href="jazveh.html">مشاهده</a></article>
+    </div>
+  </div>
+</section>
+
+<section id="popular" class="popular-section">
+  <div class="container">
+    <h3 class="section-title">دانلود سریع پرطرفدار</h3>
+    <ul class="popular-list">
+      <li><a download href="pdfs/riazi-nimesal1-1.pdf">ریاضی – ن/۱ نمونه۱</a></li>
+      <li><a download href="pdfs/oloom-nimesal2-3.pdf">علوم – ن/۲ نمونه۳</a></li>
+      <li><a download href="pdfs/q-nimesal1-2.pdf">قرآن – ن/۱ نمونه۲</a></li>
+      <li><a download href="pdfs/ejtemai-nimesal2-1.pdf">مطالعات – ن/۲ نمونه۱</a></li>
+      <li><a download href="pdfs/payamha-nimesal1-3.pdf">پیام‌ها – ن/۱ نمونه۳</a></li>
+    </ul>
+  </div>
+</section>
+
+<section id="about" class="about-section">
+  <div class="container">
+    <h3 class="section-title">دربارهٔ شایانیو</h3>
+    <p>شایانیو منابع آموزشی پایه هفتم را رایگان و مرتب در اختیار شما قرار می‌دهد.</p>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h3 class="section-title">ارتباط با ما</h3>
+    <form class="contact-form">
+      <input type="text" placeholder="نام" required>
+      <input type="email" placeholder="ایمیل" required>
+      <textarea rows="4" placeholder="پیام شما…" required></textarea>
+      <button type="submit" class="btn-primary">ارسال</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer"><div class="container"><p>© ۲۰۲۵ شایانیو</p></div></footer>
+<script>
+  document.querySelectorAll('a[href^=\"#\"]').forEach(a=>a.onclick=e=>{
+    e.preventDefault();
+    document.querySelector(a.hash).scrollIntoView({behavior:'smooth'});
+  });
+</script>
+</body>
+</html>
